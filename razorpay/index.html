@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
 </head>
 <style>
-    .svg-container {
-    border: 2px solid white;
-    box-sizing: border-box; /* Ensure the border is included in the width/height */
-}
+   .moveImage{
+      animation: 10s infinite linear companyMove;
+   }
+   @keyframes companyMove {
+       0%{
+        top: 0px;
+       }
+       100%{
+        top:-50%;
+       }
+   }
 </style>
 <body>
 
@@ -495,6 +502,123 @@
         </div>
    </section>
 
+   <section class="relative bg-[url(./images/core-features-sectionBg.svg)] bg-cover pb-[70px] pt-[10rem] mt-14">
+                                     
+     <div class="w-10/12 max-w-[1080px] mx-auto relative p-4">
+        <h2 class="font-extrabold text-center text-2xl leading-[2] text-white">Features</h2>
+        <div class="h-1 w-6 bg-green-500 mx-auto my-4"></div>
+
+        <p class="text-gray-200 flex text-center w-[50%] mx-auto">Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
+
+
+        <div class="grid grid-cols-4 gap-x-8 gap-y-8 pt-8">
+              <!--box 1  -->
+              <div class="flex flex-col gap-y-3 text-gray-100">
+                 <img width="40px" src="images/instant-activation-icon.svg" alt="">
+                 <h2 class="font-bold text-xl">Instant Activation</h2>
+                 <p>Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+              </div>
+
+              <!--box 2  -->
+              <div  class="flex flex-col gap-y-3 text-gray-100">
+                <img width="40px" src="images/easy-integration.svg" alt="">
+                <h2 class="font-bold text-xl">Easy Integrations</h2>
+                <p>With plugins for all major platforms and languages, integrate and go live with Razorpay in less than an hour.</p>
+             </div>
+
+             <!--box 3  -->
+             <div  class="flex flex-col gap-y-3 text-gray-100">
+                <img width="40px" src="images/api-driven-icon.svg" alt="">
+                <h2 class="font-bold text-xl">API Driven</h2>
+                <p>Build your business for scale with our complete API-driven automation that requires zero manual intervention.</p>
+             </div>
+
+             <!--box 4  -->
+             <div class="flex flex-col gap-y-3 text-gray-100">
+                <img width="40px" src="images/payment-modes.svg" alt="">
+                <h2 class="font-bold text-xl">100+ payment modes</h2>
+                <p>Offer your customers the luxury of all payment modes including Credit/Debit cards, Netbanking, UPI, Wallets etc.</p>
+             </div>
+
+             <!--box 5  -->
+             <div class="flex flex-col gap-y-3 text-gray-100">
+                <img width="40px" src="./images/simple-pricing.svg" alt="">
+                <h2 class="font-bold text-xl">Simple Pricing</h2>
+                <p>Our innovative payment solutions with competitive pricing make payments simpler.</p>
+             </div>
+
+             <!--box 6  -->
+             <div class="flex flex-col gap-y-3 text-gray-100">
+                <img width="40px" src="./images/industry-support-icon.svg" alt="">
+                <h2>Best in Industry Support</h2>
+                <p>Always available email, phone and chat based support to help you in your every step.</p>
+             </div>
+
+             <!--box 7  -->
+             <div class="flex flex-col gap-y-3 text-gray-100">
+                <img width="40px" src="./images/dashboard-reporting-icon.svg" alt="">
+                <h2 class="font-bold text-xl">Dashboard Reporting</h2>
+                <p>Real-time data and insights on your Razorpay Dashboard to make informed business decisions.</p>
+             </div>
+
+             <!--box 8  -->
+             <div class="flex flex-col gap-y-3 text-gray-100">
+                <img width="40px" src="./images/secure-icon.svg" alt="">
+                <h2 class="font-bold text-xl">Secure</h2>
+                <p>PCI DSS Level 1 compliant solution which removes your burden of regulatory compliance.</p>
+             </div>
+
+        </div>
+
+     </div>
+
+  </section>
+
+<section class="relative bg-[#f5f8fe] bg-no-repeat pb-12 pt-40 -mt-[250px] -z-[100]">
+    <div class="w-10/12 max-w-[1080px] mx-auto relative p-4">
+
+
+        <div class="grid grid-cols-2 pt-12 w-full justify-center">
+
+            <!--Left Part-->
+            <div class="flex flex-col gap-y-8 justify-center pt-12">
+                <h2 class="font-extrabold text-2xl text-slate-900">Join the 50,00,000 businesses using Razorpay</h2>
+                <div class="h-1 w-6 bg-green-500 "></div>
+                <p>We make it easier for you to focus on building great products while we work on simplifying your
+                    payments. Become one of us by joining thousands of our happy users and simplify the online payment
+                    experience for your customers.</p>
+                <p>Focus on your business while we handle the complexities of payments for you.</p>
+                <div>
+                    <button
+                        class="bg-blue-700 text-white flex gap-4 rounded w-fit font-bold py-2 px-3 transition-all duration-300 hover:bg-blue-400">
+                        Get Started
+                        <span class="text-white">
+                            <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path
+                                    d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!--Right Part-->
+            <div class="w-[500px] h-[500px] overflow-y-hidden relative">
+
+                <div class="w-full h-[150px] absolute top-0 z-50" style="background: linear-gradient(180deg , #f4f8ff , #fff0);"></div>
+
+                <img class="absolute object-cover moveImage" src="./images/comanies.png" alt="">
+
+                <div class="w-full h-[150px] absolute bottom-0 z-50" style="background: linear-gradient(180deg , #f4f8ff , #fff0);"></div>
+      
+
+                
+
+            </div>
+        </div>
+
+    </div>
+</section>
  
 </body>
 </html>
