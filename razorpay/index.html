@@ -27,7 +27,8 @@
         <div>
             <img height="30px" width="130px" class="py-7 " src="./images/logo.svg" alt="logo">
         </div>
-        <div>
+        
+        <div class="md:hidden lg:block">
             <ul class="flex space-x-4">
                
                 <li class="relative group text-white cursor-pointer py-7 transition-all duration-500">
@@ -69,9 +70,9 @@
         </div>
 
      <div class="flex space-x-6 text-white">
-        <img width="30" height="20" src="https://imgs.search.brave.com/4QNLnyGpJQvd8WKLs7YvaapdmmYUsV8f2yW6bwShLaY/rs:fit:560:320:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/NC80MS9GbGFnX29m/X0luZGlhLnN2Zy81/MTJweC1GbGFnX29m/X0luZGlhLnN2Zy5w/bmc" alt="">
+        <img class="md:hidden lg:block" width="30" height="20" src="https://imgs.search.brave.com/4QNLnyGpJQvd8WKLs7YvaapdmmYUsV8f2yW6bwShLaY/rs:fit:560:320:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/NC80MS9GbGFnX29m/X0luZGlhLnN2Zy81/MTJweC1GbGFnX29m/X0luZGlhLnN2Zy5w/bmc" alt="">
         <button class="border border-blue-300 rounded-sm font-semibold px-2 py-1">Login</button>
-        <button class="border border-blue-300 rounded-sm font-semibold px-2 py-1">Signup</button>
+        <button class="border border-blue-300 rounded-sm font-semibold px-2 py-1 md:hidden lg:block">Signup</button>
      </div>
 
     </div>
@@ -79,7 +80,8 @@
 
    <section class="bg-[#04032d] relative">
         <div class="max-w-[1080px] mx-auto">
-        <div class="flex items-center justify-center">
+       
+        <div class="items-center justify-center flex flex-col lg:flex-row">
             <div class="space-y-4">
                 <h1 class="text-white font-bold text-[40px] leading-[1.2]">Power your finance, grow your business</h1>
                 <div class="h-1 w-8 bg-green-500"></div>
@@ -91,6 +93,22 @@
                 <img class="w-full" src="./images/hero-illustration.jpg" alt="">
             </div>
         </div>
+
+        <!-- <div class="flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/2">
+                <div class="space-y-4 md:text-left md:pt-16 md:px-4">
+                    <h1 class="text-white font-bold text-3xl md:text-4xl lg:text-5xl leading-[1.2]">Power your finance, grow your business</h1>
+                    <div class="h-1 w-8 bg-green-500 md:mx-0"></div>
+                    <p class="text-white opacity-70 text-lg md:text-xl lg:text-2xl leading-7">Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.</p>
+                    <button class="px-6 py-4 font-bold text-white rounded bg-blue-700 transition-all duration-300">Sign Up Now -></button>
+                </div>
+            </div>
+        
+            <div class="md:w-1/2">
+                <img class="w-full" src="./images/hero-illustration.jpg" alt="">
+            </div>
+        </div>
+         -->
 
         <div class="absolute left-0 right-0 w-[100%]">
             <img class="w-full" src="./images/hero-shape.svg" alt="">
@@ -192,7 +210,7 @@
             <img 
                   src="images/payment-suite.png" 
                   alt="bg-image"
-                  class="max-w-[700px] absolute right-1 bottom-0"
+                  class="max-w-[0px] lg:max-w-[700px] md:max-w-[500px] sm:max-w-[300px]   absolute right-1 bottom-0 "
                   >
          </div>
       </div>
